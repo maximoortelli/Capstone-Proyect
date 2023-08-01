@@ -1,7 +1,7 @@
-let background = document.querySelectorAll('#background');
-let mobileButton = document.querySelectorAll('#mobileButton');
-let exitnow = document.querySelectorAll('#exit');
-let connects = document.querySelectorAll('#elements li a');
+const background = document.querySelectorAll('#background');
+const mobileButton = document.querySelectorAll('#mobileButton');
+const exitnow = document.querySelectorAll('#exit');
+const connects = document.querySelectorAll('#elements li a');
 
 mobileButton.addEventListener('click', () => {
   background.classList.add('active');

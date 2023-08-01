@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*MOBILE VERSION*/
+/* MOBILE VERSION */
 body {
   background-color: #f8f8f8;
   font-family: "Lato", sans-serif;
@@ -42,6 +42,17 @@ button#exit {
   z-index: 1;
 }
 
+section nav img {
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+section nav ul li:hover {
+  color: rgba(219, 80, 55, 0.8);
+}
+
 ul#elements {
   padding: 0;
   margin-top: 100px;
@@ -56,6 +67,16 @@ ul#elements {
   gap: 10vw;
 }
 
+section.final a img {
+  width: 75%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+section.final a img:hover {
+  transform: scale(1.1);
+}
+
 ul#elements li {
   display: flex;
   justify-content: center;
@@ -65,13 +86,6 @@ ul#elements li {
 ul#elements img {
   width: 71vw;
   height: 10vw;
-}
-
-section nav img {
-  visibility: hidden;
-  position: absolute;
-  width: 0;
-  height: 0;
 }
 
 ul#elements li img {
@@ -129,10 +143,6 @@ section nav ul {
   position: absolute;
 }
 
-section nav ul li:hover { 
-color: rgba(219, 80, 55, 0.8);
-}
-
 section.presentation {
   background-color: #f3f0f0ee;
   opacity: 0.95;
@@ -168,22 +178,6 @@ section.final div p {
   max-width: 30ch;
 }
 
-section#containercards section.cards section.individualcard p {
-  font-weight: 600;
-  color: #fff;
-  width: 70%;
-  font-size: 1.2rem;
-  padding: 0;
-}
-
-section.presentation section.allpresentation div div.info p {
-  font-weight: 600;
-  color: #5a5a5a;
-  font-size: 15px;
-  margin-left: 1%;
-  line-height: 1.5rem;
-}
-
 section.presentation section.allpresentation div h2 {
   text-align: center;
   font-size: 0.9rem;
@@ -191,6 +185,16 @@ section.presentation section.allpresentation div h2 {
   font-weight: 700;
   padding-top: 20px;
   margin-left: -33%;
+}
+
+section#containercards section.cards section.individualcard p {
+  font-weight: 600;
+  color: #fff;
+  width: 70%;
+  font-size: 1.2rem;
+  padding: 0;
+  margin-left: 3%;
+  padding-bottom: 5%;
 }
 
 .subdescription {
@@ -216,7 +220,6 @@ section#containercards {
   border-radius: 50px;
 }
 
-
 section#containercards h3 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -229,7 +232,7 @@ section#containercards h3 {
   margin-top: 10px;
 }
 
-.google{
+.google {
   margin-top: 30px;
 }
 
@@ -247,7 +250,6 @@ section#containercards section.cards {
 }
 
 section#containercards section.cards section.individualcard {
-  width: 100vw;
   background-color: rgba(161, 159, 159, 0.3);
   border-radius: 50px;
   display: flex;
@@ -260,21 +262,10 @@ section#containercards section.cards section.individualcard {
 }
 
 section#containercards section.cards section.individualcard .info4 {
-  margin-left: -5%;
   margin-top: 10%;
   margin-left: 4.5%;
   font-size: 20px;
   font-weight: 700;
-}
-
-section.final a img {
-  width: 75%;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-section.final a img:hover {
-transform: scale(1.1);
 }
 
 section#containercards section.cards section.individualcard img {
@@ -289,12 +280,7 @@ section#containercards section.cards section.individualcard h4 {
   padding-left: 17%;
 }
 
-section#containercards section.cards section.individualcard p { 
-  margin-left: 3%;
-  padding-bottom: 5%;
-}
-
-.catalog1{
+.catalog1 {
   margin-left: -20px;
 }
 
@@ -410,7 +396,7 @@ section#people div#person .all-cards div.all-cards-text hr {
   margin: 2% 0;
 }
 
-section#people div#person .all-cards div.all-cards-text p.suborange{
+section#people div#person .all-cards div.all-cards-text p.suborange {
   color: #ee523c;
 }
 
@@ -439,7 +425,7 @@ section#sponsor section.sponsors div.allcompanys {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   gap: 30px;
 }
 
@@ -457,13 +443,14 @@ section.final div p.bottom {
   font-size: 0;
 }
 
-/*Escritorio VERSION*/
+/* Escritorio VERSION */
 
-@media (min-width: 768px) { 
-* {
-  margin: 0;
-  padding: 0;
-}
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
     font-family: "Lato", sans-serif;
     background-position: center;
@@ -481,6 +468,18 @@ section.final div p.bottom {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  section nav div img {
+    visibility: visible;
+    position: static;
+  }
+
+  section.final a img {
+    width: 75%;
+    margin-left: 20%;
+    height: auto;
+    transition: transform 0.3s ease;
   }
 
   section nav div.black-line {
@@ -506,8 +505,13 @@ section.final div p.bottom {
     margin-right: -4%;
   }
 
+  section nav div ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   div.container ul li {
-    font-size: 1.20rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #5a5a5a;
     padding-left: 65px;
@@ -516,7 +520,7 @@ section.final div p.bottom {
   }
 
   div.container ul li a:hover {
-    color: 0px 0px 10px 0px  #ee523c;
+    color: #ee523c;
   }
 
   div.black-line ul li {
@@ -535,16 +539,10 @@ section.final div p.bottom {
     margin-left: -22%;
     transition: transform 0.3s ease;
   }
-  
+
   .mylogo:hover {
     transform: scale(1.1);
   }
-
-  section nav div img {
-    visibility: visible;
-    position: static;
-    
-}
 
   section nav div.black-line ul li img {
     height: 1.2rem;
@@ -564,11 +562,6 @@ section.final div p.bottom {
     width: 100%;
   }
 
-  section nav div ul li a {
-    color: inherit;
-    text-decoration: none;
-  }
-
   section nav div ul li#about {
     display: flex;
     align-items: center;
@@ -584,12 +577,6 @@ section.final div p.bottom {
     margin-left: -10%;
   }
 
-  section#containercards button a:hover {
-    border-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px rgb(255, 255, 255);
-  }
-
   section nav div ul li#about a {
     padding: 10%;
     white-space: nowrap;
@@ -599,6 +586,12 @@ section.final div p.bottom {
     color: #ee523c;
     font-size: 90%;
     border-radius: 10px;
+  }
+
+  section#containercards button a:hover {
+    border-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px rgb(255, 255, 255);
   }
 
   section.presentation {
@@ -616,11 +609,10 @@ section.final div p.bottom {
 
   section.presentation section.allpresentation div {
     margin: 0 20vw;
-    margin-top: 0px;
+    margin-top: 0;
     padding-top: 40px;
     padding-bottom: 20px;
     margin-bottom: -30px;
-
   }
 
   section.presentation section.allpresentation div h1 {
@@ -642,9 +634,11 @@ section.final div p.bottom {
     width: 100%;
     height: 100%;
     padding-left: 240px;
+    margin-left: 120px;
+    cursor: pointer;
   }
 
-  .smalltitle{
+  .smalltitle {
     font-size: 2.5rem;
     font-weight: 300;
     margin-left: 5px;
@@ -652,25 +646,31 @@ section.final div p.bottom {
   }
 
   .subdescription {
-  position: absolute;
-  text-align: center;
-  margin-top: 7%;
-  margin-left: 1.3%;
-  font-weight: 800;
-}
+    position: absolute;
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 1.3%;
+    font-weight: 800;
+  }
 
-section.presentation section.allpresentation div div.info {
-  margin: 0;
-  border: 8px white solid;
-  width: 59%;
-  height: 10%;
-}
+  section.presentation section.allpresentation div div.info {
+    margin: 0;
+    border: 8px white solid;
+    width: 59%;
+    height: 10%;
+  }
 
-  section.presentation section.allpresentation div div.info p {
-    width: 60%;
+  section.final div p {
+    padding: 0;
+    margin: 0.2vh 15vw 0 0;
+    font-size: 1.2rem;
+    color: #9f9ea2;
+    font-weight: 700;
+    max-width: 100%;
   }
 
   section.presentation section.allpresentation div div.info p {
+    width: 60%;
     font-size: 1.2rem;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -692,16 +692,7 @@ section.presentation section.allpresentation div div.info {
     font-size: 27px;
     font-weight: 700;
     text-align: start;
-    padding-bottom: 0px;
-  }
-
-  section.final div p {
-    padding: 0;
-    margin: 0.2vh 15vw 0 0;
-    font-size: 1.2rem;
-    color: #9f9ea2;
-    font-weight: 700;
-    max-width: 100%;
+    padding-bottom: 0;
   }
 
   section#containercards {
@@ -727,14 +718,14 @@ section.presentation section.allpresentation div div.info {
     margin: 1vw 0 4vw;
   }
 
-  /*CONTENEDORES*/
+  /* CONTENEDORES */
 
   section#containercards section.cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    gap: 0.20vw;
+    gap: 0.2vw;
   }
 
   section#containercards section.cards section.individualcard {
@@ -748,7 +739,7 @@ section.presentation section.allpresentation div div.info {
 
   section#containercards section.cards section.individualcard:hover {
     border-color: white;
-    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
     cursor: pointer;
   }
 
@@ -756,7 +747,7 @@ section.presentation section.allpresentation div div.info {
     margin-bottom: 5px;
   }
 
-/*debcripcion card 1*/
+  /* debcripcion card 1 */
 
   .info {
     margin-left: 30px;
@@ -804,16 +795,16 @@ section.presentation section.allpresentation div div.info {
   }
 
   .titulo1 {
-   column-gap: 200px;
+    column-gap: 200px;
   }
 
- .amenities-card img.blackboard {
-  margin-top: 0px;
+  .amenities-card img.blackboard {
+    margin-top: 0;
+    margin-bottom: -15px;
+    padding-bottom: 10px;
 
-  margin-bottom: -15px;
-  padding-bottom: 10px; 
-  /* Ajusta el valor según el espacio deseado */
-} 
+    /* Ajusta el valor según el espacio deseado */
+  }
 
   .infof {
     margin-left: 30px;
@@ -874,7 +865,7 @@ section.presentation section.allpresentation div div.info {
   }
 
   .catalog1 {
-    position:static;
+    position: static;
     padding-top: 7.7%;
     margin-left: -16.2%;
   }
@@ -927,26 +918,17 @@ section.presentation section.allpresentation div div.info {
   section#sponsor section.sponsors div.allcompanys img {
     width: 20%;
     height: 20%;
-    padding:5%;
+    padding: 5%;
     padding-top: 5%;
     margin-left: 30px;
     transition: transform 0.3s ease;
     filter: brightness(0) invert(1);
   }
 
-  section.final a img {
-    width: 75%;
-    margin-left: 20%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-
   section#sponsor section.sponsors div.allcompanys img:hover {
     transform: scale(1.2);
     cursor: pointer;
   }
-
-
 
   section#people div#person .all-cards div.image img {
     padding: 10% 0 0 20%;
@@ -990,7 +972,7 @@ section.presentation section.allpresentation div div.info {
     margin: 2% 0;
   }
 
-  section#people div#person .all-cards div.all-cards-text p.suborange{
+  section#people div#person .all-cards div.all-cards-text p.suborange {
     color: #ee523c;
   }
 
@@ -1024,17 +1006,12 @@ section.presentation section.allpresentation div div.info {
     padding-left: 3vw;
   }
 
-  section#sponsor section.sponsors div.allcompanys {
-    margin-left: 120px;
-    cursor: pointer;
-  }
-
-  .amazon{
-    margin-top: 20px;
+  .amazon {
+    margin-top: 10px;
     padding: -5%;
   }
 
-  .google{
+  .google {
     margin-top: -10px;
   }
 

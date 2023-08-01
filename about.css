@@ -52,13 +52,6 @@ ul#menu-items li {
   width: 80vw;
 }
 
-ul#menu-items li img{
-  margin-top: 80px;
-  width: 80%;
-  height: 20px;
-  margin-left: 30px;
-}
-
 div.intro-background nav img {
   visibility: hidden;
   position: absolute;
@@ -67,7 +60,10 @@ div.intro-background nav img {
 }
 
 ul#menu-items li img {
-  height: 30vw;
+  margin-top: 80px;
+  width: 80%;
+  height: 20px;
+  margin-left: 30px;
 }
 
 section#footer a {
@@ -340,7 +336,7 @@ section#partners div#partners-container div.row {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   gap: 30px;
 }
 
@@ -434,8 +430,8 @@ section#footer div p.bottom {
     font-size: 0.8rem;
     font-weight: 400;
     color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -747,5 +743,3 @@ section#footer div p.bottom {
     width: 78%;
   }
 }
-
-/*# sourceMappingURL=about-style.css.map */
