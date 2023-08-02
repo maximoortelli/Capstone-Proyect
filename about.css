@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mochiy+Pop+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-  background-color: #f8f8f8;
+  background-color: #d3d3d3;
   font-family: "Lato", sans-serif;
   margin: 0;
+  padding: 0;
 }
 
 button {
@@ -28,11 +29,11 @@ button#exit {
   z-index: 1;
 }
 
-div#menu {
+div#background {
   display: none;
 }
 
-ul#menu-items {
+ul#elements {
   padding: 0;
   visibility: visible;
   position: fixed;
@@ -46,7 +47,7 @@ ul#menu-items {
   gap: 10vw;
 }
 
-ul#menu-items li {
+ul#elements li {
   display: flex;
   justify-content: center;
   width: 80vw;
@@ -59,10 +60,10 @@ div.intro-background nav img {
   height: 0;
 }
 
-ul#menu-items li img {
+ul#elements li img {
+  height: 10vh;
   margin-top: 80px;
   width: 80%;
-  height: 20px;
   margin-left: 30px;
 }
 
@@ -70,7 +71,7 @@ section#footer a {
   text-align: center;
 }
 
-ul#menu-items li a {
+ul#elements li a {
   white-space: nowrap;
   font-weight: 600;
   font-size: 8.53vw;
@@ -79,7 +80,7 @@ ul#menu-items li a {
   text-decoration: none;
 }
 
-div#menu.active {
+div#background.active {
   display: block;
   height: 100vh;
   width: 100vw;
@@ -96,7 +97,7 @@ div.intro-background {
   background-color: #f7f7f7;
 }
 
-div.intro-background nav #hamburguer-button {
+div.intro-background nav #mobileButton {
   background-image: url(images/menu.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +135,7 @@ div.intro-background section#intro div {
 
 div.intro-background section#intro div h1 {
   margin: 0 0 5vw;
-  color: #ee523c;
+  color: #ec5242;
   font-weight: 900;
   font-size: 3rem;
   mix-blend-mode: multiply;
@@ -165,9 +166,13 @@ section#plans hr {
 
 section#partners hr {
   border-top: 0;
-  border: 0.2vw solid #ee523c;
+  border: 0.2vw solid #ec5242;
   width: 10vw;
   margin: 3vw 0 3vw;
+}
+
+.logocompany {
+  visibility: hidden;
 }
 
 div.intro-background section#intro div hr {
@@ -406,13 +411,23 @@ section#footer div p.bottom {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
     margin: 0;
   }
 
+  .logocompany {
+    visibility: visible;
+    position: absolute;
+    margin-top: -7%;
+    height: 6%;
+    width: 20%;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
   div.intro-background header nav div.top ul {
     visibility: visible;
-    position: static;
+    position: relative;
     padding: 0.1vw 0;
     margin-right: -100px;
   }
@@ -447,10 +462,10 @@ section#footer div p.bottom {
   div.intro-background header nav div {
     display: flex;
     justify-content: space-between;
-    padding: 0 70%;
+    padding-left: 61%;
   }
 
-  div.intro-background header nav div #hamburguer-button {
+  div.intro-background header nav div #mobileButton {
     visibility: hidden;
     position: absolute;
   }
@@ -463,21 +478,22 @@ section#footer div p.bottom {
   div.intro-background header nav div ul li#about-page {
     display: flex;
     align-items: center;
+    margin-right: 100%;
   }
 
   section#footer a {
-    padding-left: 17.5vw;
-    width: 40vw;
+    padding-left: 14vw;
+    width: 150vw;
     height: auto;
   }
 
   div.intro-background header nav div ul li#about-page a {
     padding: 10%;
     white-space: nowrap;
-    border: 3px solid #ee523c;
+    border: 3px solid #ec5242;
     height: 100%;
     width: 100%;
-    color: #ee523c;
+    color: #ec5242;
     font-size: 90%;
   }
 
@@ -582,7 +598,7 @@ section#footer div p.bottom {
 
   section#logo hr {
     border-top: 0;
-    border: 1px solid #ee523c;
+    border: 1px solid #ec5242;
     width: 2vw;
     margin: 2vw 0 2vw;
   }
@@ -591,7 +607,7 @@ section#footer div p.bottom {
     visibility: visible;
     position: static;
     border-top: 0;
-    border: 1px solid #ee523c;
+    border: 1px solid #ec5242;
     width: 2vw;
     margin: 2vw 0 2vw;
   }
@@ -610,7 +626,7 @@ section#footer div p.bottom {
     visibility: visible;
     position: static;
     border-top: 0;
-    border: 1px solid #ee523c;
+    border: 1px solid #ec5242;
     width: 2vw;
     margin: 2vw 0 2vw;
   }

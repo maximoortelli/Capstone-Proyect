@@ -129,7 +129,7 @@ This is the final build.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+I thank Cindy Shin for doing the original design of the website created on Behance.
 
 Feel free to check the [issues page](../../issues/).
 

@@ -1,6 +1,6 @@
-const background = document.querySelectorAll('#background');
-const mobileButton = document.querySelectorAll('#mobileButton');
-const exitnow = document.querySelectorAll('#exit');
+const background = document.querySelector('#background');
+const mobileButton = document.querySelector('#mobileButton');
+const exitnow = document.querySelector('#exit');
 const connects = document.querySelectorAll('#elements li a');
 
 mobileButton.addEventListener('click', () => {
