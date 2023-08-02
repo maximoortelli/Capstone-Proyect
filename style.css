@@ -137,8 +137,8 @@ ul#elements li a {
 
 div#background {
   display: none;
-  height: 100vh;
-  width: 100vw;
+  height: 102vh;
+  width: 102vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -507,8 +507,8 @@ section.final div p.bottom {
 
   section.final a img {
     visibility: visible;
-    width: 75%;
-    margin-left: 20%;
+    width: 30%;
+    margin-left: -55%;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -634,8 +634,8 @@ section.final div p.bottom {
   section.final div {
     display: flex;
     flex-direction: column;
-    padding-left: 8.2%;
     visibility: visible;
+    margin-left: -34%;
   }
 
   section.presentation section.allpresentation div {
@@ -1072,7 +1072,7 @@ section.final div p.bottom {
     visibility: visible;
     position: static;
     font-size: 1.2rem;
-    width: 59%;
+    width: 40%;
     font-weight: bold;
     color: rgb(100, 98, 98);
   }
