@@ -16,6 +16,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    -  [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -62,6 +63,14 @@ Final project for Microverse Module #1. This project follows established guideli
 - **Use of linters**
 - **Showcase of branching and pull request**
 - **Example of profesional best practices**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+### URL: https://maximoortelli.github.io/Capstone-Proyect/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +138,7 @@ This is the final build.
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+I thank Cindy Shin for doing the original design of the website created on Behance.
 
 Feel free to check the [issues page](../../issues/).
 
@@ -148,7 +157,7 @@ If you like this project you can clone it and feel free to improve it by making 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I want to thank Microverse for teaching me their knowledge.
+I want to especially thank Cindy Shin the author of the original design, she has the original Creative Commons License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
