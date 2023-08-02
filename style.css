@@ -84,7 +84,7 @@ section.final a img:hover {
   transform: scale(1.1);
 }
 
-.finalbutton{
+.finalbutton {
   visibility: visible;
   display: flex;
   justify-content: center;
@@ -93,8 +93,6 @@ section.final a img:hover {
   margin-left: -140%;
   width: 356px;
   height: 38px;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #272a31;
 }
 
@@ -283,8 +281,8 @@ section#containercards section.cards section.individualcard {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 3%; 
-  width: -5%; 
+  height: 3%;
+  width: -5%;
 }
 
 section#containercards section.cards section.individualcard .info4 {
@@ -302,7 +300,7 @@ section#containercards section.cards section.individualcard img {
 
 section#containercards section.cards section.individualcard h4 {
   position: absolute;
- font-size: 20px;
+  font-size: 20px;
   font-weight: 700;
   color: #ec5242;
   padding: 0;
@@ -768,7 +766,7 @@ section.final div p.bottom {
     border-radius: 20%;
   }
 
-  .finalbutton{
+  .finalbutton {
     visibility: hidden;
   }
 
@@ -823,7 +821,7 @@ section.final div p.bottom {
     margin-left: 82%;
     margin-top: -2.8%;
   }
-  
+
   h5 {
     font-size: 1.3rem;
     font-weight: 900;
@@ -1048,7 +1046,7 @@ section.final div p.bottom {
   }
 
   .google {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .mozilla {
@@ -1056,7 +1054,7 @@ section.final div p.bottom {
   }
 
   .ibm {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   section#sponsor section.sponsors .allcompanys:nth-child(even) {
