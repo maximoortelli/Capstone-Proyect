@@ -130,6 +130,7 @@ ul#elements li a {
   line-height: 11.73vw;
   color: white;
   text-decoration: none;
+  overflow: hidden;
 }
 
 div#background {
