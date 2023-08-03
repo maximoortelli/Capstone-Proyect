@@ -635,7 +635,7 @@ section.final div p.bottom {
   section.presentation section.allpresentation div h1 {
     margin: 0 0 0.1vw;
     font-size: 3.7rem;
-    line-height: 7.8rem;
+    line-height: 4rem;
     padding-bottom: 30px;
     padding-left: 15px;
     background: linear-gradient(to right, #ec5242, #fff0f0);
@@ -879,7 +879,7 @@ section.final div p.bottom {
 
   section#people div#person .all-cards {
     margin: 0;
-    gap: 20%;
+    gap: 5%;
     margin-left: 10%;
   }
 
