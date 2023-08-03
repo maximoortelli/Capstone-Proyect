@@ -90,7 +90,7 @@ section.final a img:hover {
   text-align: center;
   align-items: center;
   margin-left: -140%;
-  width: 356px;
+  width: 720px;
   height: 38px;
   border: 1px solid #272a31;
 }
@@ -118,7 +118,6 @@ ul#elements li img {
 }
 
 section.final a {
-  width: 80vw;
   height: auto;
   text-align: center;
   margin-left: -3%;
@@ -174,6 +173,7 @@ section.presentation {
 
 section.presentation section.allpresentation div {
   margin: 0 3vw;
+  padding-bottom: 30px;
 }
 
 section.presentation section.allpresentation div h1 {
@@ -209,7 +209,7 @@ section.presentation section.allpresentation div h2 {
   color: #5a5a5a;
   font-weight: 700;
   padding-top: 20px;
-  margin-left: -45%;
+  margin-left: -43%;
 }
 
 img.simbols {
@@ -219,12 +219,11 @@ img.simbols {
 .subdescription {
   color: #5a5a5a;
   position: absolute;
-  text-align: center;
-  padding-bottom: -20%;
+  padding-bottom: 20%;
   font-weight: 800;
   font-size: 0.88rem;
   margin-top: -5px;
-  margin-right: 20px;
+  margin-right: -20px;
   width: 100%;
 }
 
@@ -276,6 +275,12 @@ section#people div#person .all-cards {
   gap: 10%;
 }
 
+section#cards div.contain div.individual img {
+  width: 12%;
+  height: 12%;
+  padding: 4.5%;
+}
+
 section#people div#person .all-cards div.image {
   background-position: top left;
   background-size: 70%;
@@ -311,11 +316,20 @@ section#people div#person .all-cards div.all-cards-text {
   align-items: flex-start;
 }
 
+section#cards div.contain div.individual h4 {
+  font-weight: 700;
+  width: 20%;
+  color: #ee523c;
+  padding: 0 10% 0% 5%;
+  overflow: hidden;
+}
+
 section#people div#person .all-cards div.all-cards-text h4 {
   margin: 0;
   color: #272a31;
 }
-/*Nuevo cards*/
+
+/* Nuevo cards */
 
 section#cards div.contain div.individual p {
   font-weight: 300;
@@ -364,20 +378,6 @@ section#cards div.contain div.individual {
   justify-content: space-around;
   align-items: center;
   margin: 0 3vw;
-}
-
-section#cards div.contain div.individual img {
-  width: 12%;
-  height: 12%;
-  padding: 4.5%;
-}
-
-section#cards div.contain div.individual h4 {
-  font-weight: 700;
-  width: 20%;
-  color: #ee523c;
-  padding: 0 2.5%;
-  overflow: hidden;
 }
 
 section#cards button {
@@ -500,6 +500,7 @@ section.final div p.bottom {
   section.final a img {
     visibility: visible;
     width: 30%;
+    padding-left: 13%;
     margin-left: -55%;
     height: auto;
     transition: transform 0.3s ease;
@@ -589,6 +590,14 @@ section.final div p.bottom {
     align-items: center;
   }
 
+  section#cards button a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: inherit;
+    white-space: nowrap;
+    border-style: none none solid;
+  }
+
   section nav div ul li#about a {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -641,6 +650,7 @@ section.final div p.bottom {
     flex-direction: row;
     margin-left: -4%;
     cursor: pointer;
+    overflow: hidden;
   }
 
   .smalltitle {
@@ -658,7 +668,23 @@ section.final div p.bottom {
     font-weight: 800;
   }
 
-  /*Cards*/
+  section.final div p {
+    padding: 0;
+    margin: 0.2vh 15vw 0 0;
+    font-size: 1.2rem;
+    color: #9f9ea2;
+    font-weight: 700;
+    max-width: 100%;
+  }
+
+  section.presentation section.allpresentation div div.info p {
+    width: 60%;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20%;
+    line-height: 2rem;
+  }
 
   section#cards div.contain div.individual p {
     font-weight: 300;
@@ -669,21 +695,12 @@ section.final div p.bottom {
     overflow: hidden;
   }
 
-  section#cards button a {
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: inherit;
-    white-space: nowrap;
-    border-style: none none solid;
-  }
-
   section#cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #272a31;
     background-size: 2vw;
-    
   }
 
   section#cards h3 {
@@ -730,6 +747,14 @@ section.final div p.bottom {
     padding: 0 0 2%;
   }
 
+  section.presentation section.allpresentation div h4 {
+    font-size: 27px;
+    font-weight: 700;
+    position: absolute;
+    padding-bottom: 0;
+    padding-right: 16%;
+  }
+
   section#cards div.contain div.individual h4 {
     font-size: 1rem;
     width: 100%;
@@ -755,41 +780,12 @@ section.final div p.bottom {
     height: 5%;
   }
 
-  section.final div p {
-    padding: 0;
-    margin: 0.2vh 15vw 0 0;
-    font-size: 1.2rem;
-    color: #9f9ea2;
-    font-weight: 700;
-    max-width: 100%;
-  }
-
-  section.presentation section.allpresentation div div.info p {
-    width: 60%;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    margin-left: 20%;
-    line-height: 2rem;
-  }
-
   section.presentation section.allpresentation div h2 {
     color: #595959;
     font-size: 42.484px;
     font-weight: 900;
     padding-left: 15%;
   }
-
-  section.presentation section.allpresentation div h4 {
-    font-size: 27px;
-    font-weight: 700;
-    position: absolute;
-    padding-bottom: 0;
-    padding-right: 16%;
-  }
-
-  /* CONTENEDORES */
-
 
   .finalbutton {
     visibility: hidden;
@@ -798,8 +794,6 @@ section.final div p.bottom {
   #paper {
     margin-bottom: 5px;
   }
-
-  /* debcripcion card 1 */
 
   h5 {
     font-size: 1.3rem;
@@ -820,8 +814,6 @@ section.final div p.bottom {
     margin-top: 0;
     margin-bottom: -15px;
     padding-bottom: 10px;
-
-    /* Ajusta el valor según el espacio deseado */
   }
 
   img.simbols {
@@ -1013,8 +1005,10 @@ section.final div p.bottom {
     visibility: visible;
     position: static;
     font-size: 1.2rem;
-    width: 40%;
+    width: 35%;
     font-weight: bold;
     color: rgb(100, 98, 98);
+    margin-left: 9%;
+    padding-right: 2%;
   }
 }

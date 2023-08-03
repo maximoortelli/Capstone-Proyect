@@ -421,7 +421,8 @@ section#footer div p.bottom {
   .logocompany {
     visibility: visible;
     position: absolute;
-    margin-top: -6%;
+    margin-top: -5%;
+    padding-bottom: 100px;
     width: 20%;
     z-index: 1;
     cursor: pointer;
