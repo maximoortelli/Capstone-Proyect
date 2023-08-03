@@ -124,18 +124,6 @@ section.final a {
   margin-left: -3%;
 }
 
-section#containercards section.cards section.individualcard h4.ignite {
-  position: absolute;
-  margin-top: -11%;
-  margin-right: 63%;
-}
-
-section#containercards section.cards section.individualcard h4.lectur {
-  position: absolute;
-  margin-top: 80%;
-  margin-right: 63%;
-}
-
 ul#elements li a {
   white-space: nowrap;
   font-weight: 600;
@@ -224,16 +212,6 @@ section.presentation section.allpresentation div h2 {
   margin-left: -45%;
 }
 
-section#containercards section.cards section.individualcard p {
-  position: relative;
-  font-weight: 600;
-  color: #fff;
-  width: 50%;
-  font-size: 1.2rem;
-  margin-left: 45%;
-  margin-top: -23%;
-}
-
 img.simbols {
   margin-top: 5%;
 }
@@ -242,31 +220,12 @@ img.simbols {
   color: #5a5a5a;
   position: absolute;
   text-align: center;
-  padding-top: 1%;
   padding-bottom: -20%;
   font-weight: 800;
   font-size: 0.88rem;
+  margin-top: -5px;
+  margin-right: 20px;
   width: 100%;
-  margin-right: 5%;
-}
-
-section#containercards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #272a31;
-  background-image: url(images/background.png);
-  background-size: 8vw;
-  background-repeat: repeat;
-  margin-top: 25%;
-}
-
-section#containercards h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-top: 9vw;
-  color: white;
-  margin: 0;
 }
 
 .amazon {
@@ -277,67 +236,8 @@ section#containercards h3 {
   margin-top: 30px;
 }
 
-section#containercards hr {
-  border-top: 0;
-  border: 0.2vw solid #ec5242;
-  width: 10vw;
-  margin: 3vw 0 8vw;
-}
-
-section#containercards section.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2vw;
-}
-
-section#containercards section.cards section.individualcard {
-  background-color: rgba(161, 159, 159, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 3%;
-  width: -5%;
-}
-
-section#containercards section.cards section.individualcard .info4 {
-  margin-top: -22%;
-  margin-left: 45%;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-section#containercards section.cards section.individualcard img {
-  width: 12%;
-  height: 12%;
-  padding: 4.5%;
-}
-
-section#containercards section.cards section.individualcard h4 {
-  position: absolute;
-  font-size: 15px;
-  font-weight: 700;
-  color: #ec5242;
-  margin-right: 60%;
-  margin-top: -43%;
-}
-
 .catalog1 {
   margin-left: -20px;
-}
-
-section#containercards button {
-  margin: 10% 0;
-  width: 70vw;
-  height: 15vw;
-  background-color: #ec5242;
-  border-radius: 30px;
-  color: white;
-}
-
-section#containercards button a {
-  color: inherit;
-  text-decoration: none;
 }
 
 section#people {
@@ -414,6 +314,84 @@ section#people div#person .all-cards div.all-cards-text {
 section#people div#person .all-cards div.all-cards-text h4 {
   margin: 0;
   color: #272a31;
+}
+/*Nuevo cards*/
+
+section#cards div.contain div.individual p {
+  font-weight: 300;
+  color: #fff;
+  width: 70%;
+  font-size: 1.2rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+section#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272a31;
+  background-image: url(images/background.png);
+  background-size: 8vw;
+  background-repeat: repeat;
+}
+
+section#cards h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-top: 9vw;
+  color: white;
+  margin: 0;
+}
+
+section#cards hr {
+  border-top: 0;
+  border: 0.2vw solid #ee523c;
+  width: 10vw;
+  margin: 3vw 0 8vw;
+}
+
+section#cards div.contain {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+section#cards div.contain div.individual {
+  width: 92vw;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 3vw;
+}
+
+section#cards div.contain div.individual img {
+  width: 12%;
+  height: 12%;
+  padding: 4.5%;
+}
+
+section#cards div.contain div.individual h4 {
+  font-weight: 700;
+  width: 20%;
+  color: #ee523c;
+  padding: 0 2.5%;
+  overflow: hidden;
+}
+
+section#cards button {
+  margin: 10% 0;
+  width: 70vw;
+  height: 15vw;
+  background-color: #ee523c;
+  color: white;
+  overflow: hidden;
+}
+
+section#cards button a {
+  color: inherit;
+  text-decoration: none;
 }
 
 section#people div#person .all-cards div.all-cards-text p {
@@ -577,7 +555,7 @@ section.final div p.bottom {
 
   .mylogo {
     height: 30px;
-    width: 150px;
+    width: 80%;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 39%;
@@ -611,16 +589,6 @@ section.final div p.bottom {
     align-items: center;
   }
 
-  section#containercards button a {
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: inherit;
-    white-space: nowrap;
-    transition: border-color 0.3s;
-    padding: 10%;
-    margin-left: -10%;
-  }
-
   section nav div ul li#about a {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -631,12 +599,6 @@ section.final div p.bottom {
     color: #ec5242;
     font-size: 1rem;
     border-radius: 10px;
-  }
-
-  section#containercards button a:hover {
-    border-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 5px 3px rgb(255, 255, 255);
   }
 
   section.presentation {
@@ -691,9 +653,97 @@ section.final div p.bottom {
   .subdescription {
     position: absolute;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 3%;
     margin-left: 1.3%;
     font-weight: 800;
+  }
+
+  /*Cards*/
+
+  section#cards div.contain div.individual p {
+    font-weight: 300;
+    color: #fff;
+    width: 70%;
+    font-size: 0.8rem;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  section#cards button a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: inherit;
+    white-space: nowrap;
+    border-style: none none solid;
+  }
+
+  section#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272a31;
+    background-size: 2vw;
+    
+  }
+
+  section#cards h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 4vw;
+  }
+
+  section#cards hr {
+    border-top: 0;
+    border: 1px solid #ee523c;
+    width: 3.5vw;
+    margin: 1vw 0 4vw;
+  }
+
+  section#cards div.contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 0.2vw;
+  }
+
+  section#cards div.contain div.individual {
+    width: 15%;
+    height: 15vw;
+    background-color: rgba(128, 128, 128, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 1% 0;
+  }
+
+  section#footer a img {
+    padding: 0;
+  }
+
+  section#cards div.contain div.individual img {
+    width: 20%;
+    height: auto;
+    padding: 0 0 2%;
+  }
+
+  section#cards div.contain div.individual h4 {
+    font-size: 1rem;
+    width: 100%;
+    color: #ee523c;
+    margin: 0;
+    padding: 2% 0;
+  }
+
+  section#cards button {
+    margin: 6% 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: white;
   }
 
   section.presentation section.allpresentation div div.info {
@@ -725,72 +775,24 @@ section.final div p.bottom {
 
   section.presentation section.allpresentation div h2 {
     color: #595959;
-    text-align: start;
-    position: absolute;
     font-size: 42.484px;
     font-weight: 900;
-    margin-right: 36%;
-    margin-top: 0.5%;
+    padding-left: 15%;
   }
 
   section.presentation section.allpresentation div h4 {
     font-size: 27px;
     font-weight: 700;
-    text-align: start;
+    position: absolute;
     padding-bottom: 0;
-  }
-
-  section#containercards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #272a31;
-    background-size: 2vw;
-    margin-top: 0%;
-    border-radius: 0;
-  }
-
-  section#containercards h3 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    padding-top: 4vw;
-  }
-
-  section#containercards hr {
-    border-top: 0;
-    border: 1px solid #ec5242;
-    width: 3.5vw;
-    margin: 1vw 0 4vw;
+    padding-right: 16%;
   }
 
   /* CONTENEDORES */
 
-  section#containercards section.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    gap: 0.2vw;
-  }
-
-  section#containercards section.cards section.individualcard {
-    width: 18%;
-    height: 40vh;
-    background-color: rgba(161, 159, 159, 0.3);
-    margin: 0;
-    padding: 2% 0;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    border-radius: 20%;
-  }
 
   .finalbutton {
     visibility: hidden;
-  }
-
-  section#containercards section.cards section.individualcard:hover {
-    border-color: white;
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
-    cursor: pointer;
   }
 
   #paper {
@@ -798,45 +800,6 @@ section.final div p.bottom {
   }
 
   /* debcripcion card 1 */
-
-  section#containercards section.cards section.individualcard h4 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    font-size: 1.3rem;
-    font-weight: 900;
-    color: #ec5242;
-    margin-top: -20%;
-    margin-bottom: 10%;
-    width: 100%;
-  }
-
-  section#containercards section.cards section.individualcard h4.lectur {
-    position: absolute;
-    margin-right: -10%;
-    margin-top: 1.2%;
-  }
-
-  section#containercards section.cards section.individualcard h4.catalog1 {
-    position: absolute;
-    margin-right: -25%;
-    margin-top: -3%;
-  }
-
-  section#containercards section.cards section.individualcard h4.foro {
-    margin-left: 30%;
-    margin-top: -2.8%;
-  }
-
-  section#containercards section.cards section.individualcard h4.catalog {
-    margin-left: 20%;
-    margin-top: -2.8%;
-  }
-
-  section#containercards section.cards section.individualcard h4.ignite {
-    margin-top: -2.8%;
-    margin-left: 25%;
-  }
 
   h5 {
     font-size: 1.3rem;
@@ -853,7 +816,7 @@ section.final div p.bottom {
     column-gap: 200px;
   }
 
-  .amenities-card img.blackboard {
+  .individual img.blackboard {
     margin-top: 0;
     margin-bottom: -15px;
     padding-bottom: 10px;
@@ -869,41 +832,6 @@ section.final div p.bottom {
     margin-bottom: -10px;
   }
 
-  section#containercards section.cards section.individualcard p {
-    text-align: center;
-    margin-left: 1%;
-    width: 70%;
-  }
-
-  section#containercards section.cards section.individualcard p.info {
-    text-align: center;
-    margin-top: 30%;
-    margin-left: 14%;
-    width: 70%;
-  }
-
-  section#containercards section.cards section.individualcard p.info2 {
-    text-align: center;
-    margin-left: 15%;
-    margin-bottom: 5%;
-  }
-
-  section#containercards section.cards section.individualcard p.info3 {
-    text-align: center;
-    margin-left: 15%;
-  }
-
-  section#containercards section.cards section.individualcard p.infof {
-    margin-left: 15%;
-    margin-bottom: 18%;
-  }
-
-  section#containercards section.cards section.individualcard .info4 {
-    margin-bottom: 0%;
-    margin-left: 15%;
-    width: 70%;
-  }
-
   .info3:hover {
     color: black;
   }
@@ -914,14 +842,6 @@ section.final div p.bottom {
 
   .workshop {
     margin-top: -13px;
-  }
-
-  section#containercards button {
-    margin: 6% 0;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    color: white;
   }
 
   .catalog {
