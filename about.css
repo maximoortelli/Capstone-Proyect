@@ -206,6 +206,7 @@ section#footer div p {
   font-size: 0.7rem;
   color: #9f9ea2;
   font-weight: 700;
+  visibility: hidden;
 }
 
 div.intro-background section#intro div div.description p {
@@ -352,7 +353,7 @@ section#partners div#partners-container div.row {
 section#footer a img {
   width: 55%;
   height: auto;
-  margin-left: -80px;
+  margin-left: 77px;
 }
 
 section#partners div#partners-container div.row img {
